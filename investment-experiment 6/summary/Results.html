@@ -1,0 +1,13 @@
+{{ block title }}
+Summary 
+{{ endblock }}
+{{ block content }}
+<div>
+    <p>
+This decision making experiment has ended!<br>
+Thank you for participating!<br>
+Across all periods of this experiment you have earned {{player.participant.payoff_plus_participation_fee()}}<br>
+Your entire payment will be forwarded to your Paypal account.
+</p>
+</div>
+{{endblock}}

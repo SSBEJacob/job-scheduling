@@ -1,0 +1,18 @@
+{% block content %}
+    <form method="post">
+        <fieldset>
+            <legend>Survey</legend>
+
+            {% for field in form %}
+                <div>
+                    {{ field.label }}
+                    {{ field }}
+                </div>
+                <div style="margin-bottom: 20px;"></div> 
+            {% endfor %}
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
